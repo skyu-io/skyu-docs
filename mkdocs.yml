@@ -1,5 +1,5 @@
 site_name: SkyU Documentation
-repo_name: "skyu/skyu-docs"
+repo_name: "skyu.io/skyu-docs"
 repo_url: "https://github.com/skyu-io/skyu-documentation"
 site_url: "https://docs.skyu.com"
 theme:
@@ -18,15 +18,28 @@ theme:
   favicon: assets/images/skyu.png
   palette:
     - scheme: skyu
-     
+
 plugins:
   - search
   - awesome-pages
 
+markdown_extensions:
+  - smarty
+  - toc:
+      permalink: true
+  - pymdownx.tabbed
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - meta
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+     
 nav: 
   - Overview: index.md  
   - ...
-
 
 extra_css: 
   - assets/stylesheets/overrides.css  
