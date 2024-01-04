@@ -1,7 +1,7 @@
 site_name: SkyU Documentation
 repo_name: "skyu/skyu-docs"
 repo_url: "https://github.com/skyu-io/skyu-documentation"
-site_url: "https://docs.skyu.io"
+site_url: "https://docs.skyu.com"
 theme:
   name: material
   features:
@@ -22,16 +22,24 @@ theme:
   palette:
     - scheme: skyu
      
-nav:
-  - Overview: "index.md"
+plugins:
+    - search
+    - awesome-pages
+
+nav: 
+  - Overview: 
+      - index.md  
+      - Getting started: getting-started.md
+      - CLI: cli.md
+      - Support: support.md 
   - Concepts:
-      - concepts/index.md
+      - concepts/index.md  
   - Tutorials:
       - tutorials/index.md
   - API:
       - api/index.md
-  - FAQ:
-       - faq/index.md
+  - FAQ: 
+      - faq/index.md
 
 
 extra_css: 
