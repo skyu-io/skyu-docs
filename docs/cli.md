@@ -1,4 +1,2 @@
----
-title: CLI
----
+# CLI
 

@@ -15,10 +15,10 @@ theme:
   palette:
     - scheme: default
       primary: blue
-      accent: black 
+      accent: black S
   custom_dir: overrides
-  logo: assets/images/SkyUBlueIcon.svg
-
+  logo: assets/images/skyu-logo-512.png
+  favicon: assets/images/favicon.ico
 
 nav:
   - Overview:
