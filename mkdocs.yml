@@ -23,19 +23,15 @@ theme:
     - scheme: skyu
      
 nav:
-  - "Overview":
-      - Overview: "index.md"
-      - Getting started: "getting-started.md"
-      - CLI: "cli.md"
-      - Support: "support.md"
+  - Overview: "index.md"
   - Concepts:
       - concepts/index.md
   - Tutorials:
-      - tutorials\index.md
+      - tutorials/index.md
   - API:
-      - api\index.md
+      - api/index.md
   - FAQ:
-       - faq\index.md
+       - faq/index.md
 
 
 extra_css: 
