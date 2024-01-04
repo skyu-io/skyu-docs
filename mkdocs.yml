@@ -37,9 +37,5 @@ markdown_extensions:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
      
-nav: 
-  - Overview: index.md  
-  - ...
-
 extra_css: 
   - assets/stylesheets/overrides.css  
