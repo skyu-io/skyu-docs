@@ -24,19 +24,8 @@ plugins:
   - awesome-pages
 
 nav: 
-  - Overview: 
-      - index.md  
-      - Getting started: getting-started.md
-      - CLI: cli.md
-      - Support: support.md 
-  - Concepts:
-      - concepts/index.md  
-  - Tutorials:
-      - tutorials/index.md
-  - API:
-      - api/index.md
-  - FAQ: 
-      - faq/index.md
+  - Overview: index.md  
+  - ...
 
 
 extra_css: 
