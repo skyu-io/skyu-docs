@@ -1,6 +1,7 @@
 site_name: SkyU Documentation
 repo_name: "skyu/skyu-docs"
-repo_url: https://github.com/skyu-io/skyu-documentation
+repo_url: "https://github.com/skyu-io/skyu-documentation"
+site_url: "https://docs.skyu.io"
 theme:
   name: material
   features:
