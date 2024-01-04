@@ -35,7 +35,7 @@ jobs:
 
        # Install the latest version of Terragrunt CLI and configure the Terragrunt CLI configuration file with a Terragrunt Cloud user API token
       - name: Setup Terraform 
-        - uses: hashicorp/setup-terraform@v3
+        uses: hashicorp/setup-terraform@v3
         with:
           terraform_wrapper: true
 
