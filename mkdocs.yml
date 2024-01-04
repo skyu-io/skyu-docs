@@ -1,4 +1,6 @@
 site_name: SkyU Documentation
+repo_name: "skyu/skyu-docs"
+repo_url: https://github.com/skyu-io/skyu-documentation
 theme:
   name: material
   features:
@@ -11,29 +13,25 @@ theme:
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
+  include_sidebar: true
   language: en
-  palette:
-    - scheme: default
-      primary: blue
-      accent: black S
   custom_dir: overrides
-  logo: assets/images/skyu-logo-512.png
-  favicon: assets/images/favicon.ico
+  logo: assets/images/skyu.png
+  favicon: assets/images/skyu.png
+  palette:
+    - scheme: skyu
+     
+plugins:
+    - search
+    - awesome-pages
 
-nav:
-  - Overview:
-      - index.md
+nav: 
+  - Overview: 
+      - index.md  
       - Getting started: getting-started.md
       - CLI: cli.md
-      - Support: support.md
-  - Concepts: 
-      - Concepts/index.md
-  - Tutorials:
-      - Tutorials/index.md
-  - API: 
-      - API/index.md
-  - FAQ: 
-      - FAQ/index.md
+      - Support: support.md 
+  - ...
 
-
-   
+extra_css: 
+  - assets/stylesheets/overrides.css  
