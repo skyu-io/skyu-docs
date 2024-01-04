@@ -1,0 +1,68 @@
+name: Deploy SkyU.IO to Cloudfront
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    environment:
+      name: SkyU Documentation URL
+      url: https://docs.skyu.io
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12' 
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_TO_DEPLOY_SKYU_DOC_WEBSITE }}
+          aws-region: us-east-1
+
+      - name: Install mkdocs-material
+        run:  pip install mkdocs-material
+
+      - name: Build mkdocs-material
+        run: mkdocs build 
+
+       # Install the latest version of Terragrunt CLI and configure the Terragrunt CLI configuration file with a Terragrunt Cloud user API token
+      - name: Setup Terraform 
+        - uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_wrapper: true
+
+      - name: Setup Terraform version
+        run: terraform --version
+
+      - name: Setup Terraform wrapper path
+        run: which terraform
+
+      - name: Setup Terragrunt v0.54.12
+        run: |
+          sudo wget -q -O /bin/terragrunt “https://github.com/gruntwork-io/terragrunt/releases/download/v0.54.12/terragrunt_linux_amd64”
+          sudo chmod +x /bin/terragrunt
+          terragrunt -v
+
+      - name: terragrunt initiate
+        run: terragrunt init --terragrunt-non-interactive
+        working-directory: ./infrastructure/cloudfront
+
+      - name: Terragrunt Plan
+        run: terragrunt run-all plan --terragrunt-non-interactive
+        working-directory: ./infrastructure/cloudfront
+
+      - name: terragrunt apply
+        run: terragrunt run-all apply --terragrunt-non-interactive
+        working-directory: ./infrastructure/cloudfront
+
+      - name: upload build file to the s3 bucket
+        run: aws s3 sync site s3://skyu-documentation
+
