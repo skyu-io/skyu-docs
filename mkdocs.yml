@@ -26,12 +26,12 @@ plugins:
     - search
     - awesome-pages
 
-nav: 
-  - Overview: 
-      - index.md  
-      - Getting started: getting-started.md
-      - CLI: cli.md
-      - Support: support.md 
+nav:
+  - "Overview":
+      - Overview: "index.md"
+      - Getting started: "getting-started.md"
+      - CLI: "cli.md"
+      - Support: "support.md"
   - ...
 
 extra_css: 
