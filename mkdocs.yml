@@ -18,24 +18,17 @@ theme:
   favicon: assets/images/skyu.png
   palette:
     - scheme: skyu
-
-plugins:
-  - search
-  - awesome-pages
-
-markdown_extensions:
-  - smarty
-  - toc:
-      permalink: true
-  - pymdownx.tabbed
-  - pymdownx.superfences
-  - admonition
-  - pymdownx.details
-  - attr_list
-  - meta
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
      
 extra_css: 
   - assets/stylesheets/overrides.css  
+
+nav:
+  - Overview: index.md
+  - Concepts:
+      - concepts/index.md
+  - Tutorials:
+      - tutorials/index.md
+  - API:
+      - api/index.md
+  - FAQ: 
+      - faq/index.md
