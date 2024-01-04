@@ -1,7 +1,7 @@
 site_name: SkyU Documentation
 repo_name: "skyu.io/skyu-docs"
 repo_url: "https://github.com/skyu-io/skyu-documentation"
-site_url: "https://docs.skyu.com"
+site_url: "https://docs.skyu.io"
 theme:
   name: material
   features:
@@ -18,7 +18,7 @@ theme:
   favicon: assets/images/skyu.png
   palette:
     - scheme: skyu
-use_directory_urls: false
+
 extra_css: 
   - assets/stylesheets/overrides.css  
 
