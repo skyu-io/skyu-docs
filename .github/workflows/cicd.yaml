@@ -34,5 +34,8 @@ jobs:
         run: mkdocs build 
 
       - name: upload build file to the s3 bucket
-        run: aws s3 sync site s3://skyu-s3bucket-documentation
+        run: aws s3 sync site s3://${{ secrets.S3_BUCKET_NAME }} --delete
+
+      - name: Invalidate CloudFront
+        run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
 
