@@ -1,16 +1,13 @@
 site_name: SkyU Documentation
 repo_name: "skyu.io/skyu-docs"
-repo_url: "https://github.com/skyu-io/skyu-documentation"
+repo_url: "https://github.com/skyu-io/skyu-docs"
 site_url: "https://docs.skyu.io"
 theme:
   name: material
   features:
-    - tabs
-    - instant
     - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.instant
     - navigation.sections
+    - navigation.instant
     - toc.integrate
     - navigation.top
     - search.suggest
