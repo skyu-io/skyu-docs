@@ -1,13 +1,47 @@
-[data-md-color-scheme='skyu'] {
-    --md-primary-fg-color: #1c143d;
-    --md-primary-fg-color--light: #bbdefb;
-    --md-primary-fg-color--dark: #004c8c;
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
-.md-tabs {
-    background-color: #dc6b33;
+
+[data-md-color-scheme='skyu'] {
+    --md-primary-fg-color: #0368B1;
+    --md-primary-fg-color--light: #E8F4FE;
+    --md-primary-fg-color--dark: #0683DE;
 }
+
+
+.md-header__topic {
+    display: none;
+}
+
+/* .md-tabs {
+    background-color: #dc6b33;
+} */
 
 .md-content {
     margin-bottom: 4rem;
 }
+
+.md-nav--lifted>.md-nav__list>.md-nav__item>[for]{
+    color: #11172C;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+
+.md-nav__item .md-nav__link--active{
+    color: #0683DE;
+}
+
+.md-nav__title{
+    color: #11172C;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+/* h2{
+    color: #0000008a !important;
+} */
+
+/* h3{
+    color: #0000008a !important;
+    font-weight: 200 !important;
+} */
