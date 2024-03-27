@@ -81,7 +81,7 @@ nav:
       - Tutorials/index.md
       - Create Application:
         - Tutorials/applications/source-code-kubernetes-deployment.md
-
+        - Tutorials/applications/docker-compose-jobs-on-ec2.md
   - API: 
       - API/index.md
   - FAQ: 
