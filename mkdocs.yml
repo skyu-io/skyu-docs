@@ -1,8 +1,8 @@
 site_name: Documentation
-repo_name: "skyu.io/skyu-docs"
-repo_url: "https://github.com/skyu-io/skyu-docs"
-site_url: "https://docs.skyu.io"
-site_description: "Internal Developer Platform Built for Developers"
+repo_name: skyu.io/skyu-docs
+repo_url: https://github.com/skyu-io/skyu-docs
+site_url: https://docs.skyu.io/
+site_description: Internal Developer Platform Built for Developers
 theme:
   name: material
   features:
