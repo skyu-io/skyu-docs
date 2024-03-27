@@ -4,35 +4,41 @@ title: Overview
 
 # SkyU Console
 
-Internal Developer Platform built for Developers
+Your Cloud, Simplified.
 
-> Unlock the full potential of your development process with a modern internal developer platform designed to empower developers and streamline DevOps workflows. Embrace innovation without the constraints of continuous development.
-
+> Streamline DevOps and unleash innovation inside your teams. Start the journey towards engineering excellence.
 
 ## Features
 
-### CI/CD Out of the Box
-SkyU allows developers to take full control and Create CI/CD pipelines from a massive range of templates catered to your specific needs.
+### Services Catalog
+Visualise, group, and assign ownership of microservices to enhance organisation and accountability. One microservice per team for clear responsibility.
 
-![](/assets/images/docs/workflow-runs.png) 
 
-### Applications and Workloads
-SkyU enables developers and teams to deploy, manage and monitor applications and workloads anywhere without having to worry about the underlying infrastructure.
+### Architecture Visualisation
+Blueprint approach with a high-level overview. Understand system architecture and dependencies for planning and troubleshooting.
 
-![](/assets/images/docs/application-runtime.png) 
+![](/assets/images/docs/application-architecture.svg) 
 
-- **Auto-scaling**
+### Cost Management
+Cost explorer with tools to manage Kubernetes and cloud-based resources. Granular insights and actionable data that injects FinOps principles into your workflows.
 
-    Manages the necessary services on your clusters to horizontally or vertically scale your applications and workloads.
 
-    ![](/assets/images/docs/scaling.png) 
+### Release Orchestration
+Control and traceability of releases for maintaining high-quality deployments. Speedy rollbacks to reduce downtime to the maximum.
 
-- **DNS and Load-balancing**
 
-    - Supports multi-port mappings and fan-out ingress configurations
-    - Automated TLS(HTTPS) Certificate rotation using LetsEncrypt
-    - Supports custom Certificate Providers through cert-manager
-    - Supports Nginx and Traefik Ingress Controllers out of the box (but support is available for other controllers)
+### AI-Powered Observability
+Proactive monitoring and seamless incident management. Assistant for alerts improves response times and solution accuracy.
+
+
+
+### Simplifying Development
+From git repositories, CI/CD tools to monitoring and observability tools and container registry integrations are supported.
+
+Integrate any Container Registry of choice to your projects. SkyU will apply the necessary configurations to all connected clusters so that your teams can seamlessly utlize your Continuous Integration pipelines to deploy to any environment.
+
+![](/assets/images/docs/application-development.svg) 
+
 
 
 ### Manage Multiple Environments
@@ -43,34 +49,35 @@ Having a consistent process to create and manage the many environments (developm
 
 Create and manage environments in multiple configurations and provides your teams with the tools to easily deploy, manage and monitor workloads on your Infrastructure
 
-![](/assets/images/docs/environments.png)
+![](/assets/images/docs/application-environments.png)
 
 
-- **Create multiple environments on the same Cluster.**
+- #### Create multiple environments on the same Cluster.
   
     SkyU configures the namespacing and other underlying network and security policies to achieve optimal isolation between your different environments.
 
 
-- **Create environments that span across different Clusters.**
+- ####  Create environments that span across different Clusters.
   
     Create Multi-Cluster environments that are synchronized across any number of Clusters in your project. Multi-cluster environments provide a cookie-cutter approach to building highly resilient, disaster-recoverable systems with ease.
 
-- **Restrict permissions and access to environments** (and applications running in those environments) using RBAC Controls in SkyU.
+- #### Restrict permissions and access to environments
+    Role-Based Access Control (RBAC) and Single Sign-On (SSO) Integration
 
 
-- **Promote applications between environments.**
+- #### Promote applications between environments
   
     Promote containers between environments with a single-click (manual approval) or enable continuous deployment pipelines that makes use of advanced deployment strategies such as blue/green and canary releases with a few clicks.
 
 
-- **Environment-level audit logs and metrics**
+- #### Environment-level audit logs and metrics
   
     Every change to made to an environment is logged and audited so you're always on top of your application infrastructure. Easily Monitor application metrics that span multiple clusters (multi-cluster environments).
 
 ### Native Kubernetes Support
 Provider-agnostic connectivity to any Kubernetes Cluster whether its public, private, on-premise or on your laptop.
 
-![](/assets/images/docs/cluster-types.png)
+<!-- ![](/assets/images/docs/cluster-types.png) -->
 
 
 ### Multi Cluster and Multi Cloud Support
@@ -87,7 +94,6 @@ SkyU utilizes AWS Secret Manager to encrypt and securely store your sensitive cr
 
 
 ### Industry-strength Integrations
-From git repositories, CI/CD tools to monitoring and observability tools and container registry integrations are supported.
+Integrations to support any developer experience you need.
 
-Integrate any Container Registry of choice to your projects. SkyU will apply the necessary configurations to all connected clusters so that your teams can seamlessly utlize your Continuous Integration pipelines to deploy to any environment.
-
+![](/assets/images/docs/integrations.png)

@@ -65,12 +65,24 @@ nav:
   - "Welcome":
       - Overview: "index.md"
       - Getting started: "getting-started.md"
+      - Create a Project: "create-project.md"
+      - Connect a Kubernetes Cluster: "connect-cluster.md"
+      - Deploy your first Application: "deploy-application.md"
   - Concepts:
-      - concepts/index.md 
-  - Tutorials: 
-      - tutorials/index.md
-  - API:
-      - api/index.md
+      - Concepts/index.md 
+      - Concepts/resource-heirachy.md
+      - Concepts/secret-management.md
+      - Concepts/iam.md
+      - Concepts/releases.md
+      - Concepts/gitops.md
+      - Concepts/workflows.md  
+  - Tutorials:   
+      - Tutorials/index.md
+      - Create Application:
+        - Tutorials/applications/source-code-kubernetes-deployment.md
+
+  - API: 
+      - API/index.md
   - FAQ: 
-      - faq/index.md 
-         
+      - FAQ/index.md 
+          

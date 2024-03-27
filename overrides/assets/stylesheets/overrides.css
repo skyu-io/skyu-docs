@@ -37,6 +37,11 @@ body {
     font-weight: 600;
     margin-bottom: 0.2rem;
 }
+.md-nav__item--section>.md-nav__link[for] {
+    color: #11172C;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
 /* h2{
     color: #0000008a !important;
 } */
