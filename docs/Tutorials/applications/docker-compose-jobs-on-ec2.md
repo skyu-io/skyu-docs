@@ -32,6 +32,12 @@ Next, configure the Build Pipeline. Start by creating a new Cloud Credential for
 
 ![](/assets/images/tutorials/app-creation/docker-compose-job-on-ec2/create-cloud-credential.png)
 
+Make sure you click the `Create Role on AWS` button to actually create the role on AWS. (You will be redirected to do this)
+
+![](/assets/images/tutorials/app-creation/docker-compose-job-on-ec2/create-role-on-aws.png)
+
+Fill the `GithubOrgName` with your Github organization name. As an example, if your repo is in a personal account, the repo URL would be something like `https://github.com/iwiick-insighture/test-service-2`. In which case the `GithubOrgName` would be 'iwiick-insighture'.
+
 Then Select the `Region`. `Instance Types`, `Spot Instance Bid Price` and `VPCs` will be made available based on the `Region`
 
 ![](/assets/images/tutorials/app-creation/docker-compose-job-on-ec2/build-pipeline-pt1.png)
