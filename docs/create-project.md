@@ -32,6 +32,13 @@ In this step, you have the options to select the preferred secret manager for yo
 
 > You also have the option to migrate from the SkyU Secret Manager to a dedicated secret manager later on as well. This is a one time process where all secrets stored in the SkyU Secret Manager will be migrated into your Dedicated Secret Manager.
 
+Configuring the `Dedicated Secret Manager` is quite straightforward. Click on `Create Role on AWS` to actually create the Role in your AWS account before clicking next.
+
+> **NOTE**<br/>
+> Make sure you are logged into your AWS console in a different tab in the same browser window before clicking the `Create Role on AWS` button.
+
+![](/assets/images/docs/create-project/external-secret-manager.png)
+
 ## 05 - Create Environments
 
 This step can be used to configure the different Environments needed for the project. While you can proceed with the defaults, you can also proceed without environments.
