@@ -34,6 +34,9 @@ Next, configure the Build Pipeline. Start by creating a new Cloud Credential for
 
 Make sure you click the `Create Role on AWS` button to actually create the role on AWS. (You will be redirected to do this)
 
+> **NOTE**<br/>
+> Make sure you are logged into your AWS account's console in a different tab in th same browser as the SkyU console before clicking the `Create Role on AWS` button.
+
 ![](/assets/images/tutorials/app-creation/docker-compose-job-on-ec2/create-role-on-aws.png)
 
 Fill the `GithubOrgName` with your Github organization name. As an example, if your repo is in a personal account, the repo URL would be something like `https://github.com/iwiick-insighture/test-service-2`. In which case the `GithubOrgName` would be 'iwiick-insighture'.
