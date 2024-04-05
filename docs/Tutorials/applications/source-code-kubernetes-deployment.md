@@ -46,14 +46,7 @@ You can use this step to configure the build pipeline.
 
 ![](/assets/images/tutorials/app-creation/source-code-kubernetes-deployment/step4-build-pipeline.png)
 
-By selecting the "Create New Credential" option, you can link a registry resource to save the built image via the pipeline service offered by SkyU.
-
-To link a Docker resource, you will need to provide the following required options.
-
-![](/assets/images/tutorials/app-creation/source-code-kubernetes-deployment/step4-docker-cred.png)
-
-> NOTE<br/>
-> When entering the Registry URL, use the format `docker.io/username`, where `username` is your Docker account's username. Ensure not to append a `/` at the end of the URL.
+By selecting the "Create New Credential" option, you can link a registry resource to save the built image via the pipeline service offered by SkyU. For a complete guide on linking Image Registries, visit the [Create Image Registry tutorial](../image-registry/docker-registry.md).
 
 ## 06 - Add Service Ports
 

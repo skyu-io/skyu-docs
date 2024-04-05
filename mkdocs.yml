@@ -80,6 +80,9 @@ nav:
           - Tutorials/applications/source-code-kubernetes-deployment.md
           - Tutorials/applications/docker-compose-jobs-on-ec2.md
           - Tutorials/applications/web-application-on-aws-cloudfront.md
+      - Create Image Registry:
+          - Tutorials/image-registry/docker-registry.md
+          - Tutorials/image-registry/amazon-ecr.md
   - API:
       - API/index.md
   - FAQ:
