@@ -67,7 +67,6 @@ nav:
       - Connect a Kubernetes Cluster: "connect-cluster.md"
       - Deploy your first Application: "deploy-application.md"
   - Concepts:
-      - Concepts/index.md
       - Concepts/resource-heirachy.md
       - Concepts/secret-management.md
       - Concepts/iam.md
