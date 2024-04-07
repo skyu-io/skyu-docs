@@ -80,6 +80,7 @@ nav:
           - Tutorials/applications/source-code-kubernetes-deployment.md
           - Tutorials/applications/docker-compose-jobs-on-ec2.md
           - Tutorials/applications/web-application-on-aws-cloudfront.md
+          - Tutorials/applications/nodejs-to-lambda.md
   - API:
       - API/index.md
   - FAQ:
