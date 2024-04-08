@@ -2,34 +2,60 @@
 title: Identity and Access Management
 ---
 
-# Getting Started
+In SkyU, Identity and Access Management (IAM) plays a crucial role in managing user permissions and access control. This section outlines the hierarchical structure of IAM roles and how they are applied across different layers within the system.
 
-This section contains options to manage the permissions of the users, teams and service accounts.
+## Hierarchical Structure
 
-## 01 - Invite User to the organization
+SkyU IAM system follows a hierarchical structure consisting of three layers:
 
-Navigate to IAM section of left navigation bar. There you get landed on the `User` section by default. 
-Click on the invite button and add user email and the required permissions for that user within the organization.
+1. **Organization**: The top-most layer representing the overarching entity within the system.
+2. **Project**: Child layer under the organization, representing specific projects or initiatives within the organization.
+3. **Environment**: Further child layer under projects, representing different environments such as development, staging, or production.
 
-![](/assets/images/concepts/iam/invite.png)
+## Role Assignment Entities
 
-## 02 - Create a Team in the organization
+Roles within our IAM system can be assigned to the following entities:
 
-Click on the `Teams` section on the IAM page. Then click on the Add Team button and provide a name for the team. Then add the user emails and the required permissions for that team.
-
-The Team that you create here has the access through out the organization.
-
-![](/assets/images/concepts/iam/teams.png)
-
-## 03 - Create a Service Account in the organization
-
-Click on the `Service Accounts` section on the IAM page. Then click on the Add Service Account button and provide a name for that service account. Then add the required permissions for that service account.
-
-The service account you create here has access through out the organization and it do not have an expire time. You can use this for calling SkyU APIs through outside services such as Github actions.
-
-![](/assets/images/concepts/iam/service-account.png)
+- **Users**: Individual users who interact with the system.
+- **Teams**: Groups of users organized for collaborative purposes.
+- **Service Accounts**: Accounts used by applications or services to interact with our system programmatically.
 
 > **NOTE**<br/>
-> You can create the same resources (Users, Teams, Service Accounts) in the project level by navigating to the IAM page after selecting a project.
+> Service accounts can be used to generate a token which does not have a expire time. you can renew the token any time but the previous tokens created with the same service account are also valid until the service account is deleted.
 
-![](/assets/images/concepts/iam/proj-level.png)
+## Role Inheritance
+
+One of the key concepts in SkyU IAM system is role inheritance. When a role is assigned to a user, team, or service account at a higher level (e.g., organization level), that role is automatically propagated to all child layers (projects and environments) within that hierarchy. This means that permissions granted at higher levels apply globally to all entities within that hierarchy.
+
+For example, if a user is assigned an organization-level role with certain privileges, they will have the same privileges across all projects and environments belonging to that organization.
+
+> **NOTE**<br/>
+> The above inheritance is only deviated for the `Member` role. It does not have the inheritance. just a basic permission for the applied access level (organization, project or environment)
+
+## Role-Based Access Control (RBAC)
+
+SkyU IAM system employs Role-Based Access Control (RBAC) to manage user permissions effectively. Each role is defined with specific sets of permissions that dictate what actions a user, team, or service account can perform within the system. Roles are assigned to entities based on their responsibilities and requirements.
+
+## Example Scenarios
+
+### Scenario 1: Organization-Level Role Assignment
+
+- **Entity**: User
+- **Role**: Owner
+- **Assigned To**: Organization A
+
+In this scenario, the user is assigned an `Owner` role at the organization level (Organization A). As a result, the user will have `owner` privileges across all projects and environments within Organization A.
+
+### Scenario 2: Project-Specific Role Assignment
+
+- **Entity**: Team
+- **Role**: `Editor`
+- **Assigned To**: Project B
+
+In this scenario, a team of developers is assigned a `Edit` role specifically to Project B. This role grants the team permissions to perform development tasks within Project B and its environments only, without affecting other projects or environments within the organization.
+
+## Custome Roles
+
+SkyU provides an option to create custom roles at organization and project level. There the administrator can attach some restricted permissions from a given static permissions list to a user, team or a service account to give that entity only a specific access. That role also follows the above mentioned hierarchy
+
+

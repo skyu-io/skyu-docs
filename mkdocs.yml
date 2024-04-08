@@ -83,6 +83,8 @@ nav:
       - Create Image Registry:
           - Tutorials/image-registry/docker-registry.md
           - Tutorials/image-registry/amazon-ecr.md
+      - Manage Users:
+          - Tutorials/user-management/iam.md
   - API:
       - API/index.md
   - FAQ:
