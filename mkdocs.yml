@@ -85,6 +85,9 @@ nav:
           - Tutorials/image-registry/amazon-ecr.md
       - Manage Users:
           - Tutorials/user-management/iam.md
+      - Create Infrastructure:
+          - Tutorials/infrastructure/enable-infrastructure-feature.md
+          - Tutorials/infrastructure/deploy-rds-instance-aws.md
   - API:
       - API/index.md
   - FAQ:
