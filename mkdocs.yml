@@ -44,6 +44,7 @@ extra_css:
 plugins:
   - search
   - awesome-pages
+  - open-in-new-tab
 
 markdown_extensions:
   - smarty
@@ -68,8 +69,8 @@ nav:
       - Deploy your first Application: "deploy-application.md"
   - Concepts:
       - Concepts/resource-heirachy.md
-      - Concepts/secret-management.md
       - Concepts/iam.md
+      - Concepts/secret-management.md
       - Concepts/releases.md
       - Concepts/gitops.md
       - Concepts/workflows.md
@@ -85,6 +86,10 @@ nav:
           - Tutorials/image-registry/amazon-ecr.md
       - Manage Users:
           - Tutorials/user-management/iam.md
+          - Tutorials/user-management/LDAP-integration.md
+          - "Common IAM Guides": Tutorials/user-management/iam-common.md
+          - "Managing Access at Different Levels": Tutorials/user-management/access-levels.md
+
       - Create Infrastructure:
           - Tutorials/infrastructure/enable-infrastructure-feature.md
           - Tutorials/infrastructure/deploy-rds-instance-aws.md

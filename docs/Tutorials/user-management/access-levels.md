@@ -1,5 +1,5 @@
 ---
-title: Users, Teams and Permissions
+title: Managing Access at Different Levels
 ---
 
 One of the key concepts in SkyU IAM system is role inheritance. When a role is assigned to a user, team, or service account at a higher level (e.g., organization level), that role is automatically propagated to all child layers (projects and environments) within that hierarchy. This means that permissions granted at higher levels apply globally to all entities within that hierarchy.
@@ -57,10 +57,7 @@ Click on the `Teams` section on the IAM page. Then click on the Add Team button 
 
 The Team that you create here has the access through out the organization.
 
-<figure markdown="span">
-    ![Image](/assets/images/tutorials/iam/teams.png){ width="500" }  
-<figcaption>figure 5: Teams</figcaption>
-</figure>
+![](/assets/images/tutorials/iam/teams.png)
 
 ##  Create a Service Account in the organization
 
